@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container-fluid">
+    <button class="btn" @click="enableDisable">{{disabled ? 'Habilitar': 'Inabilitar'}}</button>
+    <br><br>
+    <dual-list :dados.sync="dados" description="nome" :disable="disabled"></dual-list>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.28/vue.min.js"></script>
+<script src="optionselect.vuejs.js"></script>
+<script src="js.js"></script>
+</body>
+</html>
