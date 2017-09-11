@@ -10,7 +10,10 @@
 <div class="container-fluid">
     <button class="btn" @click="enableDisable">{{disabled ? 'Habilitar': 'Inabilitar'}}</button>
     <br><br>
-    <dual-list :data="dados" description="nome" :disable="disabled"></dual-list>
+    <dual-list v-ref:option :data="dados" description="nome" :disable="disabled"></dual-list>
+    <br>
+    <br>
+    <button class="btn" @click="getSelected">get Selected</button>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.28/vue.min.js"></script>
