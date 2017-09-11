@@ -10,7 +10,7 @@
 <div class="container-fluid">
     <button class="btn" @click="enableDisable">{{disabled ? 'Habilitar': 'Inabilitar'}}</button>
     <br><br>
-    <dual-list :dados.sync="dados" description="nome" :disable="disabled"></dual-list>
+    <dual-list :data="dados" description="nome" :disable="disabled"></dual-list>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.28/vue.min.js"></script>

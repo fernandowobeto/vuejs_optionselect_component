@@ -20,10 +20,9 @@ Vue.component('dual-list', {
     </div>
   </div>`,
    props: {
-      dados: {
+      data: {
          type: Array,
-         required: true,
-         twoWay: true
+         required: true
       },
       disable: {
          type: Boolean,
@@ -54,7 +53,7 @@ Vue.component('dual-list', {
       },
       rightAll: function() {
          if(!this.disable){
-            this.dados.forEach(function(dado) {
+            this.data.forEach(function(dado) {
                dado.utilizado = true;
             });
          }
@@ -69,7 +68,7 @@ Vue.component('dual-list', {
       },
       leftAll: function() {
          if(!this.disable){
-            this.dados.forEach(function(dado) {
+            this.data.forEach(function(dado) {
                dado.utilizado = false;
             });
          }

@@ -2,43 +2,41 @@ new Vue({
    el: 'body',
    data: {
       disabled: true,
-      dados: [{
-         id: 1,
-         nome: 'Rio Grande do Sul',
-         utilizado: false
-      }, {
-         id: 2,
-         nome: 'Rio Grande do Norte',
-         utilizado: false
-      }, {
-         id: 3,
-         nome: 'Paraná',
-         utilizado: false
-      }, {
-         id: 4,
-         nome: 'Santa Catarina',
-         utilizado: false
-      }, {
-         id: 5,
-         nome: 'São Paulo',
-         utilizado: false
-      }, {
-         id: 6,
-         nome: 'Rio de Janeiro',
-         utilizado: false
-      }, {
-         id: 7,
-         nome: 'Manaus',
-         utilizado: false
-      }, {
-         id: 8,
-         nome: 'Acre',
-         utilizado: false
-      }]
+      dados: []
    },
    methods: {
       enableDisable: function(){
          this.disabled = !this.disabled;
-      }
-   }
+      },
+     getSelected: function(){
+
+     }
+   },
+  ready: function(){
+      this.data = [{
+        id: 1,
+        nome: 'Rio Grande do Sul'
+      }, {
+        id: 2,
+        nome: 'Rio Grande do Norte'
+      }, {
+        id: 3,
+        nome: 'Paraná'
+      }, {
+        id: 4,
+        nome: 'Santa Catarina'
+      }, {
+        id: 5,
+        nome: 'São Paulo'
+      }, {
+        id: 6,
+        nome: 'Rio de Janeiro'
+      }, {
+        id: 7,
+        nome: 'Manaus'
+      }, {
+        id: 8,
+        nome: 'Acre'
+      }];
+  }
 });
